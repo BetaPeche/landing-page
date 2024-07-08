@@ -5,7 +5,7 @@ import { useSession } from 'next-auth/react'
 import Image from 'next/image'
 
 const Header = () => {
-    const { data: session } = useSession()
+    const { data: session, status } = useSession()
     return (
         <header className="flex w-full max-w-[1140px] items-center justify-between py-6">
             <Logo />
@@ -13,7 +13,10 @@ const Header = () => {
                 <Link href="/" className="hover:text-primary">
                     Home
                 </Link>
-                <Link href="/dashboard" className="hover:text-primary">
+                <Link
+                    href={status === 'unauthenticated' ? '/' : '/dashboard'}
+                    className="hover:text-primary"
+                >
                     Features
                 </Link>
                 <Link href="/" className="hover:text-primary">
