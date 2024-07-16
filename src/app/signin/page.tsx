@@ -33,7 +33,9 @@ const SignIn = () => {
                         </button>
                         <button
                             onClick={() =>
-                                signIn('github', { callbackUrl: '/dashboard' })
+                                signIn('facebook', {
+                                    callbackUrl: '/dashboard',
+                                })
                             }
                             className="flex w-full items-center justify-center rounded-lg bg-[#1877f2] px-4 py-2 text-center text-base font-semibold text-white shadow-md transition duration-100 ease-in hover:bg-blue-700"
                         >
