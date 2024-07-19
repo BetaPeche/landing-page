@@ -19,10 +19,10 @@ const Header = () => {
                 >
                     Features
                 </Link>
-                <Link href="/" className="hover:text-primary">
+                <Link href="/pricing" className="hover:text-primary">
                     Princing
                 </Link>
-                <Link href="/" className="hover:text-primary">
+                <Link href="/company" className="hover:text-primary">
                     Company
                 </Link>
             </div>
