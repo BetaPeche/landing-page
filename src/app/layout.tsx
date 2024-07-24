@@ -6,7 +6,7 @@ import SessionWrapper from '@/components/SessionWrapper'
 const plusJakarta = Plus_Jakarta_Sans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-    title: 'Home',
+    title: 'HomePage',
     description: 'NextJs and Tailwind project',
 }
 
