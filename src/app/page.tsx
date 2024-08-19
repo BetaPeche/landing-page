@@ -1,4 +1,5 @@
 'use client'
+import ChevronRight from '@/components/ChevronRight'
 import Header from '@/components/Header'
 import Loader from '@/components/Loader'
 import { useSession } from 'next-auth/react'
@@ -13,7 +14,7 @@ export default function Home() {
     return (
         <>
             <Header />
-            <div className="grid w-full max-w-[1140px] grid-cols-2 justify-items-stretch max-md:grid-cols-1">
+            <div className="grid w-full max-w-[1140px] grid-cols-2 justify-items-stretch pb-20 max-md:grid-cols-1">
                 <div className="flex flex-col justify-center gap-6">
                     <h1 className="text-6xl font-extrabold leading-[72px] text-text-primary">
                         Take your website to the next level with Horizon UI
@@ -36,14 +37,62 @@ export default function Home() {
                     priority={true}
                 />
             </div>
-            <div className="flex w-full max-w-[1140px] flex-col items-center gap-3 py-[120px]">
-                <h2 className="leadin-[44px] text-3xl font-extrabold text-text-primary">
-                    How Horizon works?
-                </h2>
-                <p className="font-medium text-text-secondary">
-                    Tellus rutrum tellus pellentesque eu tincidunt tortor
-                    condimentum.
-                </p>
+            <div className="flex w-full max-w-[1140px] flex-col gap-[60px] py-[120px]">
+                <div className="flex w-full flex-col items-center gap-3">
+                    <h2 className="leadin-[44px] text-3xl font-extrabold text-text-primary">
+                        How Horizon works?
+                    </h2>
+                    <p className="font-medium text-text-secondary">
+                        Tellus rutrum tellus pellentesque eu tincidunt tortor
+                        condimentum.
+                    </p>
+                </div>
+                <div className="flex w-full items-center justify-evenly gap-10">
+                    <div className="flex gap-[18px]">
+                        <div className="h-12 w-12 rounded-full bg-primary text-center text-base font-bold leading-[48px] text-white">
+                            1
+                        </div>
+                        <div className="flex flex-1 flex-col">
+                            <p className="text-base font-bold leading-[30px] text-text-primary">
+                                Create your Account
+                            </p>
+                            <p className="text-base font-medium leading-[30px] text-text-secondary">
+                                Condimentum vit pellemsque habitant morbi at
+                                molestie
+                            </p>
+                        </div>
+                    </div>
+                    <ChevronRight />
+                    <div className="flex gap-[18px]">
+                        <div className="h-12 w-12 rounded-full border-2 border-primary text-center text-base font-bold leading-[44px] text-primary">
+                            2
+                        </div>
+                        <div className="flex flex-1 flex-col">
+                            <p className="text-base font-bold leading-[30px] text-text-primary">
+                                Setup your Account
+                            </p>
+                            <p className="text-base font-medium leading-[30px] text-text-secondary">
+                                Condimentum vit pellemsque habitant morbi at
+                                molestie
+                            </p>
+                        </div>
+                    </div>
+                    <ChevronRight />
+                    <div className="flex gap-[18px]">
+                        <div className="h-12 w-12 rounded-full border-2 border-primary text-center text-base font-bold leading-[44px] text-primary">
+                            3
+                        </div>
+                        <div className="flex flex-1 flex-col">
+                            <p className="text-base font-bold leading-[30px] text-text-primary">
+                                Start creating with Horizon
+                            </p>
+                            <p className="text-base font-medium leading-[30px] text-text-secondary">
+                                Condimentum vit pellemsque habitant morbi at
+                                molestie
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </>
     )
