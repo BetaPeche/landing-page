@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <header className="flex w-full max-w-[1140px] items-center justify-between py-6">
             <Logo />
-            <div className="flex w-1/2 max-w-[1024px] items-center justify-evenly text-sm text-gray-950">
+            <div className="flex w-1/2 max-w-[1024px] items-center justify-evenly text-sm font-normal text-black">
                 <Link href="/" className="hover:text-primary">
                     Home
                 </Link>
