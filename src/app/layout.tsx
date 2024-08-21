@@ -19,7 +19,7 @@ export default function RootLayout({
         <SessionWrapper>
             <html lang="fr" className="">
                 <body
-                    className={`${plusJakarta.className} flex flex-col items-center bg-slate-100 p-5 dark:bg-slate-900`}
+                    className={`${plusJakarta.className} flex flex-col items-center bg-white p-5 dark:bg-slate-900`}
                 >
                     {children}
                 </body>
