@@ -29,7 +29,7 @@ const Header = () => {
             {!session ? (
                 <Link
                     href="/signin"
-                    className="rounded-[10px] bg-[#E9E3FF] px-4 py-3 text-sm font-bold text-primary hover:bg-purple-100"
+                    className="h-10 rounded-[10px] bg-[#E9E3FF] px-4 text-sm font-bold leading-10 text-primary hover:bg-purple-100"
                 >
                     Sign In
                 </Link>
