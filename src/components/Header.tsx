@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <header className="flex w-full max-w-[1140px] items-center justify-between py-6">
             <Logo />
-            <div className="flex w-1/2 max-w-[1024px] items-center justify-evenly text-sm font-normal text-black">
+            <div className="flex w-1/2 max-w-[1024px] items-center justify-center gap-12 text-sm font-normal text-black">
                 <Link href="/" className="hover:text-primary">
                     Home
                 </Link>
@@ -19,19 +19,19 @@ const Header = () => {
                 >
                     Features
                 </Link>
-                <Link href="/pricing" className="hover:text-primary">
+                <Link href="/" className="hover:text-primary">
                     Princing
                 </Link>
-                <Link href="/company" className="hover:text-primary">
+                <Link href="/" className="hover:text-primary">
                     Company
                 </Link>
             </div>
             {!session ? (
                 <Link
-                    href="/signin"
+                    href="/"
                     className="h-10 rounded-[10px] bg-[#E9E3FF] px-4 text-sm font-bold leading-10 text-primary hover:bg-purple-100"
                 >
-                    Sign In
+                    Sign Up
                 </Link>
             ) : (
                 <div className="flex items-center gap-2">
