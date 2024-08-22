@@ -42,10 +42,7 @@ const Header = () => {
                         alt="avatar"
                         className="rounded-full"
                     />
-                    <Link
-                        href="/signin"
-                        className="text-sm font-bold text-primary"
-                    >
+                    <Link href="/signin" className="font-bold text-primary">
                         {session.user?.name}
                     </Link>
                 </div>
