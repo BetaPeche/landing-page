@@ -70,7 +70,7 @@ export default function Home() {
                 </section>
                 <section className="flex w-full max-w-[1140px] flex-col gap-[60px] py-[120px]">
                     <div className="flex w-full flex-col items-center gap-3">
-                        <h2 className="leadin-[44px] text-3xl font-extrabold text-text-primary">
+                        <h2 className="leadin-[44px] text-4xl font-extrabold text-text-primary">
                             How Horizon works?
                         </h2>
                         <p className="font-medium text-text-secondary">
@@ -267,6 +267,88 @@ export default function Home() {
                         height={504}
                         priority={true}
                     />
+                </section>
+                <section className="flex w-full max-w-[1140px] flex-col items-center gap-[74px] py-[120px]">
+                    <div className="flex flex-col items-center gap-4">
+                        <h2 className="text-4xl font-extrabold leading-[44px] text-text-primary">
+                            Customer Testimonials
+                        </h2>
+                        <p className="w-[686px] text-center text-base font-medium leading-[30px] text-text-secondary">
+                            Anim aute id magna aliqua ad ad non deserunt sunt.
+                            Qui irure qui lorem cupidatat commodo. Elit sunt
+                            amet fugiat veniam occaecat fugiat aliqua.
+                        </p>
+                    </div>
+                    <div className="flex w-full gap-[18px]">
+                        <div className="flex w-full flex-col items-center gap-[37px] rounded-2xl bg-[#F6F8FD] p-8">
+                            <h3 className="text-center text-xl font-bold leading-[30px] text-text-primary">
+                                “A must needed kit for every single software
+                                arhitect. It makes your coding life easier and
+                                your final product will be blooming.”
+                            </h3>
+                            <div className="flex flex-col items-center gap-4">
+                                <Image
+                                    className=""
+                                    src="/images/Avatar.png"
+                                    alt="eclair"
+                                    width={40}
+                                    height={40}
+                                    priority={true}
+                                    quality={100}
+                                />
+                                <div className="flex flex-col items-center">
+                                    <h4 className="text-lg font-extrabold text-text-primary">
+                                        Tiana Schleifer
+                                    </h4>
+                                    <p className="text-xs font-semibold leading-[18px] text-text-secondary">
+                                        CEO & Founder
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex w-full flex-col items-center gap-[37px] rounded-2xl bg-[#F6F8FD] p-8">
+                            <h3 className="text-center text-xl font-bold leading-[30px] text-text-primary">
+                                “A must needed kit for every single software
+                                arhitect. It makes your coding life easier and
+                                your final product will be blooming.”
+                            </h3>
+                            <div className="flex flex-col items-center gap-4">
+                                <Image
+                                    className=""
+                                    src="/images/Avatar.png"
+                                    alt="eclair"
+                                    width={40}
+                                    height={40}
+                                    priority={true}
+                                    quality={100}
+                                />
+                                <div className="flex flex-col items-center">
+                                    <h4 className="text-lg font-extrabold text-text-primary">
+                                        Tiana Schleifer
+                                    </h4>
+                                    <p className="text-xs font-semibold leading-[18px] text-text-secondary">
+                                        CEO & Founder
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section className="flex w-full max-w-[1140px] items-center justify-between py-[120px]">
+                    <div>
+                        <h2 className="text-4xl font-extrabold leading-[44px] text-text-primary">
+                            Save time with Horizon.
+                        </h2>
+                        <h3 className="text-4xl font-semibold leading-[44px] text-text-primary">
+                            Turn your visitprs info clients.
+                        </h3>
+                    </div>
+                    <div className="flex gap-4">
+                        <button className="max-w-fit rounded-[10px] border border-solid border-primary px-7 py-4 text-sm font-bold text-primary hover:bg-violet-100">
+                            Try Demo
+                        </button>
+                        <ButtonPrimary />
+                    </div>
                 </section>
             </main>
             <Footer />
