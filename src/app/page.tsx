@@ -340,7 +340,7 @@ export default function Home() {
                             Save time with Horizon.
                         </h2>
                         <h3 className="text-4xl font-semibold leading-[44px] text-text-primary">
-                            Turn your visitprs info clients.
+                            Turn your visitors info clients.
                         </h3>
                     </div>
                     <div className="flex gap-4">
