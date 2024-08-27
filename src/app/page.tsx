@@ -1,11 +1,13 @@
 'use client'
 import ButtonPrimary from '@/components/ButtonPrimary'
 import ChevronRight from '@/components/ChevronRight'
-import ExplainCard from '@/components/ExplainCard'
-import FeatureCard from '@/components/FeatureCard'
+import CustomerCard from '@/components/cards/CustomerCard'
+import ExplainCard from '@/components/cards/ExplainCard'
+import FeatureCard from '@/components/cards/FeatureCard'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import Loader from '@/components/Loader'
+import WorkflowCard from '@/components/cards/WorkflowCard'
 import { useSession } from 'next-auth/react'
 import Image from 'next/image'
 
@@ -24,7 +26,7 @@ export default function Home() {
                         <h1 className="text-6xl font-extrabold leading-[72px] text-text-primary">
                             Take your website to the next level with Horizon UI
                         </h1>
-                        <p className="max-w-[440px] pr-5 font-medium leading-8 text-text-secondary">
+                        <p className="max-w-[440px] pr-5 font-medium leading-[30px] text-text-secondary">
                             Save hundreds of hours trying to create and develop
                             a dashboard from scratch. The fastest, most
                             responsive & trendiest dashboard is here. Seriously.
@@ -130,54 +132,30 @@ export default function Home() {
                             </p>
                         </div>
                         <div className="grid grid-cols-2 gap-x-10 gap-y-[60px]">
-                            <div className="flex flex-col gap-[2px]">
-                                <h3 className="leadin-[44px] text-4xl font-extrabold text-text-primary">
-                                    340+
-                                </h3>
-                                <h4 className="text-base font-bold leading-[30px] text-text-primary">
-                                    Successful Projects
-                                </h4>
-                                <p className="text-base font-medium leading-[30px] text-text-secondary">
-                                    Urna duis convallis convallis tellus
-                                    interdum velit laoreet.
-                                </p>
-                            </div>
-                            <div className="flex flex-col gap-[2px]">
-                                <h3 className="leadin-[44px] text-4xl font-extrabold text-text-primary">
-                                    $10m
-                                </h3>
-                                <h4 className="text-base font-bold leading-[30px] text-text-primary">
-                                    Annual Percentage Rate
-                                </h4>
-                                <p className="text-base font-medium leading-[30px] text-text-secondary">
-                                    Urna duis convallis convallis tellus
-                                    interdum velit laoreet.
-                                </p>
-                            </div>
-                            <div className="flex flex-col gap-[2px]">
-                                <h3 className="leadin-[44px] text-4xl font-extrabold text-text-primary">
-                                    2.8k+
-                                </h3>
-                                <h4 className="text-base font-bold leading-[30px] text-text-primary">
-                                    Clients Worldwide
-                                </h4>
-                                <p className="text-base font-medium leading-[30px] text-text-secondary">
-                                    Urna duis convallis convallis tellus
-                                    interdum velit laoreet.
-                                </p>
-                            </div>
-                            <div className="flex flex-col gap-[2px]">
-                                <h3 className="leadin-[44px] text-4xl font-extrabold text-text-primary">
-                                    7000+
-                                </h3>
-                                <h4 className="text-base font-bold leading-[30px] text-text-primary">
-                                    Daily Visits
-                                </h4>
-                                <p className="text-base font-medium leading-[30px] text-text-secondary">
-                                    Urna duis convallis convallis tellus
-                                    interdum velit laoreet.
-                                </p>
-                            </div>
+                            <WorkflowCard
+                                title="340+"
+                                subtitle="Successful Project"
+                                text="Urna duis convallis convallis tellus
+                                    interdum velit laoreet."
+                            />
+                            <WorkflowCard
+                                title="$10m"
+                                subtitle="Annual Percentage Rate"
+                                text="Urna duis convallis convallis tellus
+                                    interdum velit laoreet."
+                            />
+                            <WorkflowCard
+                                title="2.8k+"
+                                subtitle="Clients Worldwide"
+                                text="Urna duis convallis convallis tellus
+                                    interdum velit laoreet."
+                            />
+                            <WorkflowCard
+                                title="7000+"
+                                subtitle="Daily Visits"
+                                text="Urna duis convallis convallis tellus
+                                    interdum velit laoreet."
+                            />
                         </div>
                     </div>
                     <Image
@@ -202,58 +180,18 @@ export default function Home() {
                         </p>
                     </div>
                     <div className="flex w-full gap-[18px]">
-                        <div className="flex w-full flex-col items-center gap-[37px] rounded-2xl bg-[#F6F8FD] p-8">
-                            <h3 className="text-center text-xl font-bold leading-[30px] text-text-primary">
-                                “A must needed kit for every single software
-                                arhitect. It makes your coding life easier and
-                                your final product will be blooming.”
-                            </h3>
-                            <div className="flex flex-col items-center gap-4">
-                                <Image
-                                    className="h-auto w-auto"
-                                    src="/images/Avatar.png"
-                                    alt="eclair"
-                                    width={40}
-                                    height={0}
-                                    priority={true}
-                                    quality={100}
-                                />
-                                <div className="flex flex-col items-center">
-                                    <h4 className="text-lg font-extrabold text-text-primary">
-                                        Tiana Schleifer
-                                    </h4>
-                                    <p className="text-xs font-semibold leading-[18px] text-text-secondary">
-                                        CEO & Founder
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="flex w-full flex-col items-center gap-[37px] rounded-2xl bg-[#F6F8FD] p-8">
-                            <h3 className="text-center text-xl font-bold leading-[30px] text-text-primary">
-                                “A must needed kit for every single software
-                                arhitect. It makes your coding life easier and
-                                your final product will be blooming.”
-                            </h3>
-                            <div className="flex flex-col items-center gap-4">
-                                <Image
-                                    className="h-auto w-auto"
-                                    src="/images/Avatar.png"
-                                    alt="eclair"
-                                    width={40}
-                                    height={0}
-                                    priority={true}
-                                    quality={100}
-                                />
-                                <div className="flex flex-col items-center">
-                                    <h4 className="text-lg font-extrabold text-text-primary">
-                                        Tiana Schleifer
-                                    </h4>
-                                    <p className="text-xs font-semibold leading-[18px] text-text-secondary">
-                                        CEO & Founder
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                        <CustomerCard
+                            review="“A must needed kit for every single software arhitect. It makes your coding life easier and your final product will be blooming.”"
+                            image="/images/Avatar.png"
+                            name="Tiana Schleifer"
+                            title="CEO & Founder"
+                        />
+                        <CustomerCard
+                            review="“A must needed kit for every single software arhitect. It makes your coding life easier and your final product will be blooming.”"
+                            image="/images/Avatar.png"
+                            name="Tiana Schleifer"
+                            title="CEO & Founder"
+                        />
                     </div>
                 </section>
                 <section className="flex w-full max-w-[1140px] items-center justify-between py-[120px]">
