@@ -11,7 +11,7 @@ const Header = () => {
             <Logo />
             <div className="flex w-1/2 max-w-[1024px] items-center justify-center gap-12 text-sm font-normal text-black">
                 <Link href="/" className="hover:text-primary">
-                    Home
+                    Product
                 </Link>
                 <Link
                     href={status === 'unauthenticated' ? '/' : '/dashboard'}
@@ -26,27 +26,35 @@ const Header = () => {
                     Company
                 </Link>
             </div>
-            {!session ? (
+            <div className="flex h-full items-center gap-5">
                 <Link
                     href="/"
-                    className="h-10 rounded-[10px] bg-[#E9E3FF] px-4 text-sm font-bold leading-10 text-primary hover:bg-purple-100"
+                    className="text-sm font-normal text-black hover:text-primary"
                 >
-                    Sign Up
+                    Log In
                 </Link>
-            ) : (
-                <div className="flex items-center gap-2">
-                    <Image
-                        src={session.user?.image as string}
-                        width={40}
-                        height={40}
-                        alt="avatar"
-                        className="rounded-full"
-                    />
-                    <Link href="/signin" className="font-bold text-primary">
-                        {session.user?.name}
+                {!session ? (
+                    <Link
+                        href="/"
+                        className="h-10 rounded-[10px] bg-[#E9E3FF] px-4 text-sm font-bold leading-10 text-primary hover:bg-purple-100"
+                    >
+                        Sign Up
                     </Link>
-                </div>
-            )}
+                ) : (
+                    <div className="flex items-center gap-2">
+                        <Image
+                            src={session.user?.image as string}
+                            width={40}
+                            height={40}
+                            alt="avatar"
+                            className="rounded-full"
+                        />
+                        <Link href="/signin" className="font-bold text-primary">
+                            {session.user?.name}
+                        </Link>
+                    </div>
+                )}
+            </div>
         </header>
     )
 }
