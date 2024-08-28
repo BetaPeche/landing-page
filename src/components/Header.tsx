@@ -20,7 +20,7 @@ const Header = () => {
                     Features
                 </Link>
                 <Link href="/" className="hover:text-primary">
-                    Princing
+                    Pricing
                 </Link>
                 <Link href="/" className="hover:text-primary">
                     Company
