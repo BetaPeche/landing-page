@@ -26,7 +26,7 @@ export default function Home() {
                         <h1 className="text-6xl font-extrabold leading-[72px] text-text-primary">
                             Take your website to the next level with Horizon UI
                         </h1>
-                        <p className="max-w-[440px] pr-5 font-medium leading-[30px] text-text-secondary">
+                        <p className="max-w-[440px] text-base font-medium leading-[30px] text-text-secondary">
                             Save hundreds of hours trying to create and develop
                             a dashboard from scratch. The fastest, most
                             responsive & trendiest dashboard is here. Seriously.
