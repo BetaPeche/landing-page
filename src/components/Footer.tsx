@@ -58,11 +58,21 @@ const Footer = () => {
                     </Link>
                 </div>
                 <div className="flex gap-8">
-                    <FaFacebookF className="text-xl text-text-secondary" />
-                    <FaTwitter className="text-xl text-text-secondary" />
-                    <FaGithub className="text-xl text-text-secondary" />
-                    <FaLinkedin className="text-xl text-text-secondary" />
-                    <FaInstagram className="text-xl text-text-secondary" />
+                    <Link href="/">
+                        <FaFacebookF className="text-xl text-text-secondary" />
+                    </Link>
+                    <Link href="/">
+                        <FaTwitter className="text-xl text-text-secondary" />
+                    </Link>
+                    <Link href="/">
+                        <FaGithub className="text-xl text-text-secondary" />
+                    </Link>
+                    <Link href="/">
+                        <FaLinkedin className="text-xl text-text-secondary" />
+                    </Link>
+                    <Link href="/">
+                        <FaInstagram className="text-xl text-text-secondary" />
+                    </Link>
                 </div>
             </div>
             <p className="text-sm font-medium leading-6 text-text-secondary">
